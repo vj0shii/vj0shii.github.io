@@ -8,7 +8,7 @@ It was the same program as [How I bypassed OTP mechanism used for updating Sensi
 
 ## Scenario
 
-There was a Address book section inside the application where the user can add a number of addresses for the product delivery, whenever a user adds a new address to his/her account there is a id alloted to that which was in simple numeric format, when a user updates the address, the id is sent with the request and the address is updated, `updateid` parameter in below request
+There was a Address book section inside the application where the user can add a number of addresses for the product delivery<!--more-->, whenever a user adds a new address to his/her account there is a id alloted to that which was in simple numeric format, when a user updates the address, the id is sent with the request and the address is updated, `updateid` parameter in below request
 
 **Address Update Request**
 
