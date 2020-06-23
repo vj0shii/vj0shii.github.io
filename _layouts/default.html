@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="vj0shii" data-description="Help me in buying Laptop" data-message="Hey! I am currently working in a shared system" data-color="#5F7FFF" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+	    <div class="container1">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name">{{ site.name }}</h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+		<a href="{{ site.baseurl }}/contact">Contact Me</a>
+    <a href="{{ site.baseurl }}/donate"></a>
+          </nav>
+        </header>
+		    </div>
+    </div>
+    <div id="main" role="main" class="container1">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container1">
+        <footer class="footer">
+		<div align="center">
+          	</div></br>
+	  {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
