@@ -6,7 +6,7 @@ title: Compromise complete application with CSRF attack
 I was looking for responsible disclosure programs and came across a program, let's call it example.com
 
 I started enumeration, the website is basically used to create applications which will be deployed as a subdomain on the website domain, like if I created an application test then URL to the application will be https://test.example.com
-
+<!--more-->
 I created an application that has URL https://test.example.com/, the first thing that I noticed is there was no Email verification
 
 During enumeration, I came across the Profile update page from where the user’s name can be changed but Email field was disabled on the frontend
