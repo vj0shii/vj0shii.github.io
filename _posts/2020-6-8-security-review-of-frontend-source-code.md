@@ -3,7 +3,7 @@ layout: post
 title: Reviewing the Frontend Source Code of Web Application
 ---
 
-After my last blog [Chaining Small Vulnerabilities to Account takeover](https://vj0shii.github.io/chaining-vulnerabilities-to-compromise-account/), I got many messages asking, how I found the variable from javascript, so, in this blog I will demonstrate, how do I review the frontend source code, this does not include analysis from any tools, but some good tools are DumpsterDiver, truffleHog, etc.
+After my last blog [Chaining Small Vulnerabilities to Account takeover](https://vj0shii.github.io/chaining-vulnerabilities-to-compromise-account/), I got many messages asking, how I found the variable from javascript, so, in this blog I will demonstrate, how do I review the frontend source code, this does not include analysis from any tools<!--more-->, but some good tools are DumpsterDiver, truffleHog, etc.
 
 Nowadays everyone needs a website, which is user friendly and process every function as quickly as possible, also JavaScript and HTML5 offers a wide range of functions that can be performed easily at client-side nowadays, so developers uses the frontend code to do many operations, but the problem occurs when the developer stores sensitive data in frontend code, like API keys, credentials, etc., or perform sensitive functions only on client-side
 
