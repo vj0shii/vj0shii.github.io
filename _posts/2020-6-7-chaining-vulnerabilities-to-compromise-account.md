@@ -6,7 +6,7 @@ title: Chaining Small Vulnerabilities to Account takeover
 ## Overview
 
 The application was an admin application which is used to manage users, user-roles, user-groups, and other user account options, I found several vulnerabilities in the applications which can be chained and lead to many account takeovers in the application, firstly I will list the vulnerabilities that I found and after that a demonstration, how I chained the vulnerabilities
-
+<!--more-->
 ## Found Vulnerabilities
 
 ### Plaintext Password in Javascript
