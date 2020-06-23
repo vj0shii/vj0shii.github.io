@@ -1,0 +1,85 @@
+section p {
+  color: black;
+}
+
+.jumbotron {
+  background: #483D8B;
+  color: white;
+  box-shadow: 0px 8px 5px rgba(72, 61, 139, 0.5);
+}
+
+/* buttons */
+.mybtns {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border: 1px white solid;
+  color: white;
+}
+
+.mybtns:hover {
+  color: #483D8B;
+  background: white;
+}
+
+/* links */
+.mylinks {
+  color: #483D8B;
+  text-decoration: underline dotted #483D8B;
+}
+
+.mylinks:hover {
+  text-decoration: underline;
+}
+
+#profile {
+  border-radius: 50%;
+}
+
+p {
+  font-weight: 400;
+}
+
+#featured a {
+  color: black;
+  text-decoration: none;
+}
+
+.banner {
+  height: 25vh;
+  background-color: #000000;
+  margin-bottom: 0px;
+}
+
+#main-col {
+  margin-top: -75px;
+}
+
+.card {
+  margin: 1rem auto;
+  height: 90%;
+}
+
+.card2 {
+  margin: 1rem auto;
+  height: 90%;
+  border: 1px solid #000000;
+}
+
+.card3 {
+  margin: 1rem auto;
+  height: 90%;
+}
+
+.card:hover {
+  background-color: #483D8B;
+  opacity: 0.5;
+}
+.card:hover p {
+  color: white;
+}
+
+.professional {
+  border: 1px solid #483D8B;
+}
+
+/*# sourceMappingURL=mentor.css.map */
