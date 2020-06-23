@@ -3,7 +3,7 @@ layout: post
 title: Testing WebApp Access Control with Autorize
 ---
 This blog is about [Autorize](https://github.com/Quitten/Autorize) which is an Automated Authorization testing plugin for burp suite, the tool can be used to check if proper Access control is implemented on the server or not
-
+<!--more-->
 ## What is Authorization/Access Control
 
 Authorization or Access control are the rules or privileges which are set for every user role, the rules define that if a particular user or a member of a group have the permission to access any functionality on the server or not, if the permission to alloted then server will response back with the content but if the user does not have privileges then the server reply that the access is forbidden and mostly with 403 response code
