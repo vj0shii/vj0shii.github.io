@@ -11,7 +11,7 @@ Hello, this is part 1 of the short writeup series of VIIT CTF V2
 [p4nk4j](https://www.linkedin.com/in/p4nk4jv/) - Pankaj Verma |
 [H4$H](https://www.linkedin.com/in/anuja-khandelwal-a83402182/) - Anuja Khandelwal |
 [loopspell](https://www.linkedin.com/in/ankitkushwah/) - Ankit Kushwah
-
+<!--more-->
 ## Crypto
 
 ### Piggy
