@@ -82,4 +82,9 @@ p {
   border: 1px solid #483D8B;
 }
 
+#container-x {
+  margin-top: -50;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
 /*# sourceMappingURL=mentor.css.map */
