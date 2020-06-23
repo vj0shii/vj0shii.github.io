@@ -7,7 +7,7 @@ title: How I bypassed OTP mechanism used for updating Sensitive Information
 
 I found this vulnerability in a ecommerce site, the site has a responsible disclosure program
 
-So the vulnerability was in profile updation page, there was a form by which a user can update his/her details, the details also includes `Mobile Number`, when a user tried to update any other detail it was updated normally but when user click on Edit button at `Mobile Number` field, OTP is sent to the registered email, and a popup occurs asking for the OTP, after entering OTP the number field can be enabled and updated
+So the vulnerability was in profile<!--more--> updation page, there was a form by which a user can update his/her details, the details also includes `Mobile Number`, when a user tried to update any other detail it was updated normally but when user click on Edit button at `Mobile Number` field, OTP is sent to the registered email, and a popup occurs asking for the OTP, after entering OTP the number field can be enabled and updated
 
 **OTP Validation Request**
 
