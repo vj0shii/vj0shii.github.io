@@ -6,13 +6,17 @@ permalink: /blogs
 table, td, th {
     border: 1px solid #000000;
 	}
+.description {
+	margin-left: 1px;
+	margin-right: 1px;
+	}
 </style>
 <div align="center"><h1>Blogs Related to Infosec</h1></div>
 <div class="posts">
 <table border="1px" width="100%">
 	<colgroup>
-		<col width="40%" />
-		<col width="50%" />
+		<col width="30%" />
+		<col width="60%" />
 		<col width="10%" />
 	</colgroup>
 	<thead>
@@ -26,7 +30,7 @@ table, td, th {
   {% for post in site.posts %}
     <tr>
 			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}"><ul><li>{{ post.title }}</li></ul></a></td>
-			<td markdown="span">{{ post.excerpt }}</td>
+	    <td markdown="span"><div class="description">{{ post.excerpt }}</div></td>
 			<td markdown="span">{{ post.date | date: "%B %e, %Y" }}</td>
 		</tr>
   {% endfor %}
