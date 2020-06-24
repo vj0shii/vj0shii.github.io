@@ -31,11 +31,7 @@ layout: default
 	<tbody>
   {% for post in site.posts %}
     <tr>
-			<ul>
-				<li>
-					<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
-				</li>
-	    </ul>
+			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}"><ul><li>{{ post.title }}</li></ul></a></td>
 			<td markdown="span">{{ post.excerpt }}</td>
 			<td markdown="span">{{ post.date | date: "%B %e, %Y" }}</td>
 		</tr>
