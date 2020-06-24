@@ -2,17 +2,30 @@
 layout: default
 ---
 
+## Blogs Related to Infosec
 <div class="posts">
+<table border="1" width="100%">
+	<colgroup>
+		<col width="40%" />
+		<col width="10%" />
+		<col width="40%" />
+		<col width="10%" />
+	</colgroup>
+	<thead>
+		<tr class="header">
+			<th>Title</th>
+			<th>Author</th>
+			<th>Description</th>
+			<th>Publication date</th>
+		</tr>
+	</thead>
+	<tbody>
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <tr>
+			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
+			<td markdown="span">{{ site.name }}</td>
+			<td markdown="span">{{ post.excerpt }}</td>
+			<td markdown="span"></td>
+		</tr>
   {% endfor %}
 </div>
