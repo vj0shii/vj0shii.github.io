@@ -2,10 +2,17 @@
 layout: default
 ---
 <style>
-         table, th, td {
-            border: 1px solid black;
-         }
-      </style>
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    display: inline-block;
+}
+
+	th {
+		margin-top: 45%;
+		align:center;
+	}
+</style>
 <div align="center"><h1>Blogs Related to Infosec</h1></div>
 <div class="posts">
 <table border="1px" width="100%">
@@ -26,7 +33,11 @@ layout: default
 	<tbody>
   {% for post in site.posts %}
     <tr>
-			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
+			<ul>
+				<li>
+					<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
+				</li>
+	    </ul>
 			<td markdown="span">{{ site.name }}</td>
 			<td markdown="span">{{ post.excerpt }}</td>
 			<td markdown="span">{{ post.date | date: "%B %e, %Y" }}</td>
