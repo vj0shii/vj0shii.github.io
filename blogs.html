@@ -6,9 +6,18 @@ permalink: /blogs
 table, td, th {
     border: 1px solid #000000;
 	}
+
+.blog-title {
+	margin-right: 10px;
+	text-align: justify;
+	text-justify: inter-word;
+	}
+
 .description {
-	margin-left: 1px;
-	margin-right: 1px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: justify;
+	text-justify: inter-word;
 	}
 </style>
 <div align="center"><h1>Blogs Related to Infosec</h1></div>
@@ -29,7 +38,7 @@ table, td, th {
 	<tbody>
   {% for post in site.posts %}
     <tr>
-			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}"><ul><li>{{ post.title }}</li></ul></a></td>
+			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}"><ul><div class="blog-title"><li>{{ post.title }}</li></div></ul></a></td>
 	    <td markdown="span"><div class="description">{{ post.excerpt }}</div></td>
 			<td markdown="span">{{ post.date | date: "%B %e, %Y" }}</td>
 		</tr>
