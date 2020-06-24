@@ -53,6 +53,9 @@ baseurl: ""
 
 permalink: /:title/
 
+plugins:
+- jekyll-feed
+ 
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
