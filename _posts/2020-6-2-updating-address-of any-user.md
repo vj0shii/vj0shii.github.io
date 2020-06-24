@@ -2,11 +2,7 @@
 layout: post
 title: How I was able to update any user's address
 ---
-## Overview
-
 It was the same program as [How I bypassed OTP mechanism used for updating Sensitive Information](https://vj0shii.github.io/bypass-otp-mechanism-on-updating-sensitive-information/)
-
-## Scenario
 
 There was a Address book section inside the application where the user can add a number of addresses for the product delivery<!--more-->, whenever a user adds a new address to his/her account there is a id alloted to that which was in simple numeric format, when a user updates the address, the id is sent with the request and the address is updated, `updateid` parameter in below request
 
