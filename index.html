@@ -25,7 +25,7 @@ layout: default
 			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
 			<td markdown="span">{{ site.name }}</td>
 			<td markdown="span">{{ post.excerpt }}</td>
-			<td markdown="span"></td>
+			<td markdown="span">{{ page.date | date: "%B %e, %Y" }}</td>
 		</tr>
   {% endfor %}
 </div>
