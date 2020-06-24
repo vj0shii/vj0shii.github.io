@@ -18,14 +18,12 @@ layout: default
 <table border="1px" width="100%">
 	<colgroup>
 		<col width="40%" />
-		<col width="10%" />
-		<col width="40%" />
+		<col width="50%" />
 		<col width="10%" />
 	</colgroup>
 	<thead>
 		<tr class="header">
 			<th><b>Title</b></th>
-			<th><b>Author</b></th>
 			<th><b>Description</b></th>
 			<th><b>Publication date</b></th>
 		</tr>
@@ -38,7 +36,6 @@ layout: default
 					<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
 				</li>
 	    </ul>
-			<td markdown="span">{{ site.name }}</td>
 			<td markdown="span">{{ post.excerpt }}</td>
 			<td markdown="span">{{ post.date | date: "%B %e, %Y" }}</td>
 		</tr>
