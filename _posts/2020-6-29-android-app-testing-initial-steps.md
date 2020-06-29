@@ -13,7 +13,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  <h2>Source Code Extraction</h2>
  
- <h3>Extracting jar file<h3>
+ <h3>Extracting jar file</h3>
  
  As we know that the apk is also a archive file so we can simply rename it to a zip and extract the data
  
