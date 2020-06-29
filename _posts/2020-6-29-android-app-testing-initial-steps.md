@@ -15,7 +15,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  As we know that the apk is also a archive file so we can simply rename it to a zip and extract the data
  
- ```bash
+ ```
  $ mv test.apk test.zip
  $ unzip test.zip
  ```
@@ -28,7 +28,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  For converting a dex file into a jar, use below command
  
- ```bash
+ ```
  $ d2j-dex2jar classes.dex
  ```
  
