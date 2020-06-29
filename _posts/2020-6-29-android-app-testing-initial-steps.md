@@ -9,6 +9,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  * [Bypass Root Detection & SSL Pinning](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#bypass-root-detection--ssl-pinning)
  
+ Below are the steps with description
  
  ## Source Code Extraction
  
