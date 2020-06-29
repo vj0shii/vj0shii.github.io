@@ -5,9 +5,9 @@ title: Android App Source code Extraction and Bypassing Root and SSL Pinning che
 
 In this blog I will be describing the pre-requesty steps I followed for one of the android application penetration testing<!--more--> which includes
  
- * Source Code Extraction
+ * [Source Code Extraction](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#source-code-extraction)
  
- * Bypass Root Detection & SSL Pinning
+ * [Bypass Root Detection & SSL Pinning](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#bypass-root-detection--ssl-pinning)
  
  ## Source Code Extraction
  
@@ -83,9 +83,9 @@ Sometimes there are multiple layer of obfuscation, in that case above steps can 
 
 Finally open jd-gui and open the final jar, on the top-left corner inside file, click on `Save all Sources`, to save java code a zip file will be saved containing all the java code
 
-### Bypass Root Detection & SSL Pinning
+## Bypass Root Detection & SSL Pinning
 
-**Root Detection**
+### Root Detection
 So there was root detection and ssl pinning in the application which needs to be bypassed for further testing, I started searching for function names similar to root or detection, and found a function named `RootDetection()` let be in a file StartActivity.java on the top level directory, because the file I found is named respetive to the company app name
 
 So functions structure was like, it is performing several checks and returning the final response as true or false, true means device is rooted, false means it is not
@@ -162,7 +162,7 @@ $ frida -U -l test.js -f *app_name* --no-pause
 
 You can get the app name by listing all installed applications, After running above steps, it will automatically restart the application and the root detection will be passed, applicaton can be successfully used in the rooted device
 
-**SSL Pinning**
+### SSL Pinning
 
 So after bypassing the root detection, the problem was the ssl pinning I used the [Univeral SSL Pinning bypass script](https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/)
 
