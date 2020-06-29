@@ -9,6 +9,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  * [Bypass Root Detection & SSL Pinning](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#bypass-root-detection--ssl-pinning)
  
+ 
  ## Source Code Extraction
  
  ### Extracting jar file
@@ -93,8 +94,8 @@ So functions structure was like, it is performing several checks and returning t
 ```java
 RootDetection() {
   if (new File("/usr/bin/su").exists()) continue:
-    -nested if loops here- 
       return true;
+  --More if statements--
   return false
 ```
 
