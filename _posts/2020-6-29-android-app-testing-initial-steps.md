@@ -107,7 +107,7 @@ Download frida server from [here](https://github.com/frida/frida/releases/)
 To get the architecture of device, connect device to the host system and run below command
 
 ```bash
-adb shell getprop ro.product.cpu.abi
+$ adb shell getprop ro.product.cpu.abi
 ```
 
 unpack the xz file and transfer the server file to device, and start server with below commands
