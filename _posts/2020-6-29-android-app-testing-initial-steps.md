@@ -17,7 +17,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  As we know that the apk is also a archive file so we can simply rename it to a zip and extract the data
  
- ```
+ ```bash
  $ mv test.apk test.zip
  $ unzip test.zip
  ```
@@ -30,7 +30,7 @@ In this blog I will be describing the pre-requesty steps I followed for one of t
  
  For converting a dex file into a jar, use below command
  
- ```
+ ```bash
  $ d2j-dex2jar classes.dex
  ```
  
@@ -106,13 +106,13 @@ Download frida server from [here](https://github.com/frida/frida/releases/)
 
 To get the architecture of device, connect device to the host system and run below command
 
-```
+```bash
 adb shell getprop ro.product.cpu.abi
 ```
 
 unpack the xz file and transfer the server file to device, and start server with below commands
 
-```
+```bash
 $ adb push frida-server /data/local/tmp/
 $ adb shell
 > cd /data/local/tmp
@@ -139,13 +139,13 @@ setTimeout(function(){
 
 For running the script install frida in your host machine, which can be installed from python-pip
 
-```
+```bash
 $ pip install frida-server
 ```
 
 Basic Usage
 
-```
+```bash
 Connect frida to USB device
 $ frida-ps -U
 List running applications
@@ -158,7 +158,7 @@ Install the application in the device
 
 Finally running the created script script
 
-```
+```bash
 $ frida -U -l test.js -f *app_name* --no-pause 
 ```
 
@@ -172,13 +172,13 @@ Intially as I will be using burp suite for testing, I used burpsuite CA cert for
 
 Transfer this cert to the device, the location is specified is script, if you modify the file location or name remember to specify in script(line 30)
 
-```
+```bash
 $ adb push cacert.der /data/local/tmp/cert-der.crt
 ```
 
 Start the frida server in device and run below command
 
-```
+```bash
 $ frida -U -l ssl-bypass.js -f *app_name* --no-pause 
 ```
 
