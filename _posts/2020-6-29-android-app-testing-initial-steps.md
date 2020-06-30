@@ -5,38 +5,38 @@ title: Android App Source code Extraction and Bypassing Root and SSL Pinning che
 
 In this blog I will be describing the pre-requesty steps I followed for one of the android application penetration testing<!--more--> which includes
  
- * [Source Code Extraction](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#source-code-extraction)
+* [Source Code Extraction](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#source-code-extraction)
  
- * [Bypass Root Detection & SSL Pinning](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#bypass-root-detection--ssl-pinning)
+* [Bypass Root Detection & SSL Pinning](https://github.com/vj0shii/vj0shii.github.io/blob/master/_posts/2020-6-29-android-app-testing-initial-steps.md#bypass-root-detection--ssl-pinning)
  
- Below are the steps with description
+Below are the steps with description
  
- <h2>Source Code Extraction</h2>
+## Source Code Extraction
+
+### Extracting jar file
  
- <h3>Extracting jar file</h3>
+As we know that the apk is also a archive file so we can simply rename it to a zip and extract the data
  
- As we know that the apk is also a archive file so we can simply rename it to a zip and extract the data
+```bash
+$ mv test.apk test.zip
+$ unzip test.zip
+```
  
- ```bash
- $ mv test.apk test.zip
- $ unzip test.zip
- ```
+After this there will be a classes.dex files, there can be more than one, like, classes2.dex, the dex files can be converted to jar file with `dex2jar`, you can install it in debian linux machine with the command below
  
- After this there will be a classes.dex files, there can be more than one, like, classes2.dex, the dex files can be converted to jar file with `dex2jar`, you can install it in debian linux machine with the command below
+```bash
+$ apt install dex2jar
+```
+
+For converting a dex file into a jar, use below command
+
+```bash
+$ d2j-dex2jar classes.dex
+```
  
- ```bash
- $ apt install dex2jar
- ```
+after this a new jar file will be created in current directory
  
- For converting a dex file into a jar, use below command
- 
- ```bash
- $ d2j-dex2jar classes.dex
- ```
- 
- after this a new jar file will be created in current directory
- 
- ### Deobfuscating code in jar file if obfuscated
+### Deobfuscating code in jar file if obfuscated
  
 **Obfuscation** is a process which changes the functions and varibale names and created a lot of classes to jump around in the code, which makes it difficult to understand. Programmers may deliberately obfuscate code to conceal its purpose (security through obscurity) or its logic or implicit values embedded in it, primarily, in order to prevent tampering, deter reverse engineering, or even as a puzzle or recreational challenge for someone reading the source code.
 
