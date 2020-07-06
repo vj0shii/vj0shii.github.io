@@ -7,7 +7,7 @@ Hello, this is part 1 of the short writeup series of VIIT CTF V2
 **Team** - N00bs | **Position** - 2nd (Runner ups) |
 **Team Members:**
 
-[vj0shii](https://vj0shii.github.io/about) - Vaibhav Joshi |
+[vj0shii](https://vj0shii.github.io/) - Vaibhav Joshi |
 [p4nk4j](https://www.linkedin.com/in/p4nk4jv/) - Pankaj Verma |
 [H4$H](https://www.linkedin.com/in/anuja-khandelwal-a83402182/) - Anuja Khandelwal |
 [loopspell](https://www.linkedin.com/in/ankitkushwah/) - Ankit Kushwah
