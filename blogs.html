@@ -2,29 +2,11 @@
 layout: default
 permalink: /blogs
 ---
-<div class="container-blog">
-<div align="center"><h1>Blogs Related to Infosec</h1></div>
+<div class="container">
 <div class="posts">
-<table border="1px" width="100%">
-	<colgroup>
-		<col width="30%" />
-		<col width="60%" />
-		<col width="10%" />
-	</colgroup>
-	<thead>
-		<tr class="header">
-			<th><div align="center"><b>Title</b></div></th>
-			<th><div align="center"><b>Description</b></div></th>
-			<th><div align="center"><b>Publication date</b></div></th>
-		</tr>
-	</thead>
-	<tbody>
   {% for post in site.posts %}
-    <tr>
-			<td markdown="span"><a href="{{ site.baseurl }}{{ post.url }}"><ul><div class="blog-title"><li>{{ post.title }}</li></div></ul></a></td>
-	    <td markdown="span"><div class="description">{{ post.excerpt }}</div></td>
-			<td markdown="span">{{ post.date | date: "%B %e, %Y" }}</td>
-		</tr>
+	<a href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
+	<p>{{ post.excerpt }}</p>
   {% endfor %}
 	</tbody>
 	</table>
